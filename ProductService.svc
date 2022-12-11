@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TP.DMS.WebServices.ProductService" CodeBehind="ProductService.svc.cs" %>

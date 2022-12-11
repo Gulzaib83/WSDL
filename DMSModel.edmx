@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BatchesReports">
+          <Key>
+            <PropertyRef Name="BatchID" />
+          </Key>
+          <Property Name="BatchID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="64" />
+          <Property Name="ActualStartTime" Type="datetime" Nullable="false" />
+          <Property Name="ActualEndTime" Type="datetime" Nullable="false" />
+          <Property Name="Recipe_RID" Type="nvarchar" MaxLength="64" />
+          <Property Name="Description" Type="nvarchar" MaxLength="64" />
+        </EntityType>
+        <EntityType Name="CIPDurationEquipment">
+          <Key>
+            <PropertyRef Name="EquipmentId" />
+            <PropertyRef Name="ProcessClass" />
+            <PropertyRef Name="TimeStamp" />
+          </Key>
+          <Property Name="EquipmentId" Type="int" Nullable="false" />
+          <Property Name="EquipmentGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EquipmentName" Type="nvarchar" MaxLength="64" />
+          <Property Name="ProcessClass" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="DurationMinutes" Type="int" Nullable="false" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Equipments">
+          <Key>
+            <PropertyRef Name="EquipmentId" />
+          </Key>
+          <Property Name="EquipmentId" Type="int" Nullable="false" />
+          <Property Name="EquipmentGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EquipmentName" Type="nvarchar" MaxLength="64" />
+          <Property Name="TypeOfEquipment" Type="nvarchar" MaxLength="256" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Lines">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="int" Nullable="false" />
+          <Property Name="LineGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LineName" Type="nvarchar" MaxLength="64" />
+          <Property Name="SerialNumber" Type="nvarchar" MaxLength="256" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PackagedProduced">
+          <Key>
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="DateProduction" />
+          </Key>
+          <Property Name="LineId" Type="int" Nullable="false" />
+          <Property Name="LineGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LineName" Type="nvarchar" MaxLength="64" />
+          <Property Name="DateProduction" Type="datetime" Nullable="false" />
+          <Property Name="ProductionTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="StopTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="OtherStopTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="OutsideProductionTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="PackagesOut" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductProducedAmount">
+          <Key>
+            <PropertyRef Name="EquipmentId" />
+            <PropertyRef Name="ArticleName" />
+            <PropertyRef Name="TimeStamp" />
+          </Key>
+          <Property Name="EquipmentId" Type="int" Nullable="false" />
+          <Property Name="EquipmentGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EquipmentName" Type="nvarchar" MaxLength="64" />
+          <Property Name="ArticleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="AmountLiters" Type="int" Nullable="false" />
+          <Property Name="DurationProduceMinutes" Type="int" Nullable="false" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Function Name="PS_BatchesPerProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartTime" Type="datetime" Mode="In" />
+          <Parameter Name="EndTime" Type="datetime" Mode="In" />
+          <Parameter Name="AsProductId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="PS_CIP_Duration_Time_per_Date_Process" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartTime" Type="datetime" Mode="In" />
+          <Parameter Name="EndTime" Type="datetime" Mode="In" />
+          <Parameter Name="AsProcessClass" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="PS_CIP_Duration_Time_per_Date_Process_message" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FromTime" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="PS_Packages_Produced_per_Date" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AsLineId" Type="int" Mode="In" />
+          <Parameter Name="StartTime" Type="datetime" Mode="In" />
+          <Parameter Name="EndTime" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="PS_Product_Produced_per_Date" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartTime" Type="datetime" Mode="In" />
+          <Parameter Name="EndTime" Type="datetime" Mode="In" />
+          <Parameter Name="AsEquipmentId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="PS_Product_Produced_per_Equipment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartTime" Type="datetime" Mode="In" />
+          <Parameter Name="EndTime" Type="datetime" Mode="In" />
+          <Parameter Name="AsEquipmentId" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="BatchesReports" EntityType="Self.BatchesReports" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CIPDurationEquipment" EntityType="Self.CIPDurationEquipment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Equipments" EntityType="Self.Equipments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lines" EntityType="Self.Lines" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PackagedProduced" EntityType="Self.PackagedProduced" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductProducedAmount" EntityType="Self.ProductProducedAmount" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BatchesReport">
+          <Key>
+            <PropertyRef Name="BatchID" />
+          </Key>
+          <Property Name="BatchID" Type="Int32" Nullable="false" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="ProductName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="ActualStartTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ActualEndTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Recipe_RID" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CIPDurationEquipment">
+          <Key>
+            <PropertyRef Name="EquipmentId" />
+            <PropertyRef Name="ProcessClass" />
+            <PropertyRef Name="TimeStamp" />
+          </Key>
+          <Property Name="EquipmentId" Type="Int32" Nullable="false" />
+          <Property Name="EquipmentGuid" Type="Guid" Nullable="false" />
+          <Property Name="EquipmentName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="ProcessClass" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DurationMinutes" Type="Int32" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Equipment">
+          <Key>
+            <PropertyRef Name="EquipmentId" />
+          </Key>
+          <Property Name="EquipmentId" Type="Int32" Nullable="false" />
+          <Property Name="EquipmentGuid" Type="Guid" Nullable="false" />
+          <Property Name="EquipmentName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="TypeOfEquipment" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Line">
+          <Key>
+            <PropertyRef Name="LineId" />
+          </Key>
+          <Property Name="LineId" Type="Int32" Nullable="false" />
+          <Property Name="LineGuid" Type="Guid" Nullable="false" />
+          <Property Name="LineName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="SerialNumber" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="PackagedProduced">
+          <Key>
+            <PropertyRef Name="LineId" />
+            <PropertyRef Name="DateProduction" />
+          </Key>
+          <Property Name="LineId" Type="Int32" Nullable="false" />
+          <Property Name="LineGuid" Type="Guid" Nullable="false" />
+          <Property Name="LineName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="DateProduction" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProductionTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="StopTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="OtherStopTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="OutsideProductionTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="PackagesOut" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductProducedAmount">
+          <Key>
+            <PropertyRef Name="EquipmentId" />
+            <PropertyRef Name="ArticleName" />
+            <PropertyRef Name="TimeStamp" />
+          </Key>
+          <Property Name="EquipmentId" Type="Int32" Nullable="false" />
+          <Property Name="EquipmentGuid" Type="Guid" Nullable="false" />
+          <Property Name="EquipmentName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="ArticleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AmountLiters" Type="Int32" Nullable="false" />
+          <Property Name="DurationProduceMinutes" Type="Int32" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BatchesReports" EntityType="Self.BatchesReport" />
+          <EntitySet Name="CIPDurationEquipments" EntityType="Self.CIPDurationEquipment" />
+          <EntitySet Name="Equipments" EntityType="Self.Equipment" />
+          <EntitySet Name="Lines" EntityType="Self.Line" />
+          <EntitySet Name="PackagedProduceds" EntityType="Self.PackagedProduced" />
+          <EntitySet Name="ProductProducedAmounts" EntityType="Self.ProductProducedAmount" />
+          <FunctionImport Name="PS_BatchesPerProduct" ReturnType="Collection(Model.PS_BatchesPerProduct_Result)">
+            <Parameter Name="StartTime" Mode="In" Type="DateTime" />
+            <Parameter Name="EndTime" Mode="In" Type="DateTime" />
+            <Parameter Name="AsProductId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="PS_CIP_Duration_Time_per_Date_Process" ReturnType="Collection(Model.PS_CIP_Duration_Time_per_Date_Process_Result)">
+            <Parameter Name="StartTime" Mode="In" Type="DateTime" />
+            <Parameter Name="EndTime" Mode="In" Type="DateTime" />
+            <Parameter Name="AsProcessClass" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="PS_CIP_Duration_Time_per_Date_Process_message" ReturnType="Collection(Model.PS_CIP_Duration_Time_per_Date_Process_message_Result)">
+            <Parameter Name="FromTime" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PS_Packages_Produced_per_Date" ReturnType="Collection(Model.PS_Packages_Produced_per_Date_Result)">
+            <Parameter Name="AsLineId" Mode="In" Type="Int32" />
+            <Parameter Name="StartTime" Mode="In" Type="DateTime" />
+            <Parameter Name="EndTime" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="PS_Product_Produced_per_Date" ReturnType="Collection(Model.PS_Product_Produced_per_Date_Result)">
+            <Parameter Name="StartTime" Mode="In" Type="DateTime" />
+            <Parameter Name="EndTime" Mode="In" Type="DateTime" />
+            <Parameter Name="AsEquipmentId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="PS_Product_Produced_per_Equipment" ReturnType="Collection(Model.PS_Product_Produced_per_Equipment_Result)">
+            <Parameter Name="StartTime" Mode="In" Type="DateTime" />
+            <Parameter Name="EndTime" Mode="In" Type="DateTime" />
+            <Parameter Name="AsEquipmentId" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="PS_BatchesPerProduct_Result">
+          <Property Type="Int32" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="Column1" Nullable="true" MaxLength="64" />
+          <Property Type="Int32" Name="NumberofBatches" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="PS_CIP_Duration_Time_per_Date_Process_Result">
+          <Property Type="Int32" Name="EquipmentId" Nullable="false" />
+          <Property Type="String" Name="EquipmentName" Nullable="true" MaxLength="64" />
+          <Property Type="Int32" Name="TotalDurationMinutes" Nullable="true" />
+          <Property Type="DateTime" Name="LastTimeCIP" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="PS_CIP_Duration_Time_per_Date_Process_message_Result">
+          <Property Type="Int32" Name="EquipmentId" Nullable="false" />
+          <Property Type="String" Name="EquipmentName" Nullable="true" MaxLength="64" />
+          <Property Type="Int32" Name="TotalDurationMinutes" Nullable="true" />
+          <Property Type="DateTime" Name="LastTimeCIP" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="PS_Packages_Produced_per_Date_Result">
+          <Property Type="Int32" Name="LineId" Nullable="false" />
+          <Property Type="String" Name="LineName" Nullable="true" MaxLength="64" />
+          <Property Type="DateTime" Name="DateProduction" Nullable="false" Precision="23" />
+          <Property Type="Time" Name="ProductionTime" Nullable="false" />
+          <Property Type="Time" Name="StopTime" Nullable="false" />
+          <Property Type="Time" Name="OtherStopTime" Nullable="false" />
+          <Property Type="Time" Name="OutsideProductionTime" Nullable="false" />
+          <Property Type="Int32" Name="PackagesOut" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="PS_Product_Produced_per_Date_Result">
+          <Property Type="String" Name="ArticleName" Nullable="false" MaxLength="256" />
+          <Property Type="Int32" Name="TotalAmountLiters" Nullable="true" />
+          <Property Type="Int32" Name="TotalDurationProduceMinutes" Nullable="true" />
+          <Property Type="DateTime" Name="LastTimeCIP" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="PS_Product_Produced_per_Equipment_Result">
+          <Property Type="Int32" Name="EquipmentId" Nullable="false" />
+          <Property Type="String" Name="Column1" Nullable="true" MaxLength="64" />
+          <Property Type="Int32" Name="TotalAmountLiters" Nullable="true" />
+          <Property Type="Int32" Name="TotalDurationProduceMinutes" Nullable="true" />
+          <Property Type="DateTime" Name="LastTimeCIP" Nullable="true" Precision="23" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="BatchesReports">
+            <EntityTypeMapping TypeName="Model.BatchesReport">
+              <MappingFragment StoreEntitySet="BatchesReports">
+                <ScalarProperty Name="BatchID" ColumnName="BatchID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ActualStartTime" ColumnName="ActualStartTime" />
+                <ScalarProperty Name="ActualEndTime" ColumnName="ActualEndTime" />
+                <ScalarProperty Name="Recipe_RID" ColumnName="Recipe_RID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CIPDurationEquipments">
+            <EntityTypeMapping TypeName="Model.CIPDurationEquipment">
+              <MappingFragment StoreEntitySet="CIPDurationEquipment">
+                <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+                <ScalarProperty Name="EquipmentGuid" ColumnName="EquipmentGuid" />
+                <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+                <ScalarProperty Name="ProcessClass" ColumnName="ProcessClass" />
+                <ScalarProperty Name="DurationMinutes" ColumnName="DurationMinutes" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Equipments">
+            <EntityTypeMapping TypeName="Model.Equipment">
+              <MappingFragment StoreEntitySet="Equipments">
+                <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+                <ScalarProperty Name="EquipmentGuid" ColumnName="EquipmentGuid" />
+                <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+                <ScalarProperty Name="TypeOfEquipment" ColumnName="TypeOfEquipment" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lines">
+            <EntityTypeMapping TypeName="Model.Line">
+              <MappingFragment StoreEntitySet="Lines">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="LineGuid" ColumnName="LineGuid" />
+                <ScalarProperty Name="LineName" ColumnName="LineName" />
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PackagedProduceds">
+            <EntityTypeMapping TypeName="Model.PackagedProduced">
+              <MappingFragment StoreEntitySet="PackagedProduced">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="LineGuid" ColumnName="LineGuid" />
+                <ScalarProperty Name="LineName" ColumnName="LineName" />
+                <ScalarProperty Name="DateProduction" ColumnName="DateProduction" />
+                <ScalarProperty Name="ProductionTime" ColumnName="ProductionTime" />
+                <ScalarProperty Name="StopTime" ColumnName="StopTime" />
+                <ScalarProperty Name="OtherStopTime" ColumnName="OtherStopTime" />
+                <ScalarProperty Name="OutsideProductionTime" ColumnName="OutsideProductionTime" />
+                <ScalarProperty Name="PackagesOut" ColumnName="PackagesOut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductProducedAmounts">
+            <EntityTypeMapping TypeName="Model.ProductProducedAmount">
+              <MappingFragment StoreEntitySet="ProductProducedAmount">
+                <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+                <ScalarProperty Name="EquipmentGuid" ColumnName="EquipmentGuid" />
+                <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+                <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+                <ScalarProperty Name="AmountLiters" ColumnName="AmountLiters" />
+                <ScalarProperty Name="DurationProduceMinutes" ColumnName="DurationProduceMinutes" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="PS_BatchesPerProduct" FunctionName="Model.Store.PS_BatchesPerProduct">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.PS_BatchesPerProduct_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
+                <ScalarProperty Name="NumberofBatches" ColumnName="NumberofBatches" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PS_CIP_Duration_Time_per_Date_Process" FunctionName="Model.Store.PS_CIP_Duration_Time_per_Date_Process">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.PS_CIP_Duration_Time_per_Date_Process_Result">
+                <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+                <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+                <ScalarProperty Name="TotalDurationMinutes" ColumnName="TotalDurationMinutes" />
+                <ScalarProperty Name="LastTimeCIP" ColumnName="LastTimeCIP" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PS_CIP_Duration_Time_per_Date_Process_message" FunctionName="Model.Store.PS_CIP_Duration_Time_per_Date_Process_message">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.PS_CIP_Duration_Time_per_Date_Process_message_Result">
+                <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+                <ScalarProperty Name="EquipmentName" ColumnName="EquipmentName" />
+                <ScalarProperty Name="TotalDurationMinutes" ColumnName="TotalDurationMinutes" />
+                <ScalarProperty Name="LastTimeCIP" ColumnName="LastTimeCIP" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PS_Packages_Produced_per_Date" FunctionName="Model.Store.PS_Packages_Produced_per_Date">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.PS_Packages_Produced_per_Date_Result">
+                <ScalarProperty Name="LineId" ColumnName="LineId" />
+                <ScalarProperty Name="LineName" ColumnName="LineName" />
+                <ScalarProperty Name="DateProduction" ColumnName="DateProduction" />
+                <ScalarProperty Name="ProductionTime" ColumnName="ProductionTime" />
+                <ScalarProperty Name="StopTime" ColumnName="StopTime" />
+                <ScalarProperty Name="OtherStopTime" ColumnName="OtherStopTime" />
+                <ScalarProperty Name="OutsideProductionTime" ColumnName="OutsideProductionTime" />
+                <ScalarProperty Name="PackagesOut" ColumnName="PackagesOut" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PS_Product_Produced_per_Date" FunctionName="Model.Store.PS_Product_Produced_per_Date">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.PS_Product_Produced_per_Date_Result">
+                <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+                <ScalarProperty Name="TotalAmountLiters" ColumnName="TotalAmountLiters" />
+                <ScalarProperty Name="TotalDurationProduceMinutes" ColumnName="TotalDurationProduceMinutes" />
+                <ScalarProperty Name="LastTimeCIP" ColumnName="LastTimeCIP" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PS_Product_Produced_per_Equipment" FunctionName="Model.Store.PS_Product_Produced_per_Equipment">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Model.PS_Product_Produced_per_Equipment_Result">
+                <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
+                <ScalarProperty Name="TotalAmountLiters" ColumnName="TotalAmountLiters" />
+                <ScalarProperty Name="TotalDurationProduceMinutes" ColumnName="TotalDurationProduceMinutes" />
+                <ScalarProperty Name="LastTimeCIP" ColumnName="LastTimeCIP" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

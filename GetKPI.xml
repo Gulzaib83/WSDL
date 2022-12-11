@@ -1,0 +1,1321 @@
+<?xml version="1.0"?>  
+<DataTable xmlns="http://localhost/PLMSWebServices">
+<xs:schema xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="NewDataSet">
+<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Kpi_List" msdata:UseCurrentLocale="true">
+<xs:complexType>
+<xs:choice minOccurs="0" maxOccurs="unbounded">
+<xs:element name="Kpi_List">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Date" type="xs:string" minOccurs="0"/>
+<xs:element name="KPI" type="xs:string" minOccurs="0"/>
+<xs:element name="Description" type="xs:string" minOccurs="0"/>
+<xs:element name="Value" type="xs:string" minOccurs="0"/>
+<xs:element name="DateInvariant" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+<diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+<DocumentElement xmlns="">
+<Kpi_List diffgr:id="Kpi_List1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>TotalTime</KPI>
+<Description>TotalTime</Description>
+<Value>86400</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>AttendanceTime</KPI>
+<Description>AttendanceTime</Description>
+<Value>80792</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>IdleStopTime</KPI>
+<Description>IdleStopTime</Description>
+<Value>7775</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List4" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PlannedStopTime</KPI>
+<Description>PlannedStopTime</Description>
+<Value>13097</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List5" msdata:rowOrder="4" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>StopTimeNoMS</KPI>
+<Description>StopTimeNoMS</Description>
+<Value>5763</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>StopFrequency</KPI>
+<Description>Stop Frequency</Description>
+<Value>8.000000</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List7" msdata:rowOrder="6" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>StopFrequencyNoMS</KPI>
+<Description>StopFrequencyNoMS</Description>
+<Value>7.000000</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List8" msdata:rowOrder="7" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>OtherStopFrequency</KPI>
+<Description>OtherStopFrequency</Description>
+<Value>9.000000</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List9" msdata:rowOrder="8" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>OutsideProductionFrequency</KPI>
+<Description>OutsideProductionFrequency</Description>
+<Value>8</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List10" msdata:rowOrder="9" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>ProductionTime</KPI>
+<Description>Production Time (Hr)</Description>
+<Value>13:03:56</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List11" msdata:rowOrder="10" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>StopTime</KPI>
+<Description>Equipment Stop (Hr)</Description>
+<Value>1:36:28</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List12" msdata:rowOrder="11" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>OtherStopTime</KPI>
+<Description>Other Stop (Hr)</Description>
+<Value>3:48:05</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List13" msdata:rowOrder="12" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>OutsideProductionTime</KPI>
+<Description>Outside Production (Hr)</Description>
+<Value>3:58:03</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List14" msdata:rowOrder="13" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>TCU</KPI>
+<Description>Total Capacity Utilisation (%)</Description>
+<Value>54.44%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List15" msdata:rowOrder="14" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>TU</KPI>
+<Description>Time Utilisation (%)</Description>
+<Value>58.22%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List16" msdata:rowOrder="15" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PMU</KPI>
+<Description>Packaging Material Utilisation (%)</Description>
+<Value>98.81%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List17" msdata:rowOrder="16" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>MME</KPI>
+<Description>Machine Mechanical Efficiency (%)</Description>
+<Value>89.04%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List18" msdata:rowOrder="17" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>MTBF</KPI>
+<Description>Mean Time Between Failure (Hr)</Description>
+<Value>1:51:59</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List19" msdata:rowOrder="18" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>MTTR</KPI>
+<Description>Mean Time To Restoration (Hr)</Description>
+<Value>0:13:43</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List20" msdata:rowOrder="19" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PME</KPI>
+<Description>Packaging Material Efficiency (%)</Description>
+<Value>99.53%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List21" msdata:rowOrder="20" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PackagesOut</KPI>
+<Description>Packages Produced</Description>
+<Value>117122</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List22" msdata:rowOrder="21" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>TotalWaste</KPI>
+<Description>Total Waste</Description>
+<Value>1405</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List23" msdata:rowOrder="22" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PercTotalWaste</KPI>
+<Description>Waste, % of Packages In</Description>
+<Value>1.19%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List24" msdata:rowOrder="23" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>StopWaste</KPI>
+<Description>Equipment Waste</Description>
+<Value>552</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List25" msdata:rowOrder="24" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>OtherStopWaste</KPI>
+<Description>Other Production Waste</Description>
+<Value>630</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List26" msdata:rowOrder="25" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>OutsideProductionWaste</KPI>
+<Description>Outside Production Waste</Description>
+<Value>223</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List27" msdata:rowOrder="26" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PercDocWaste</KPI>
+<Description>Documented Waste, % of Packages In</Description>
+<Value>1.19%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List28" msdata:rowOrder="27" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>DTP</KPI>
+<Description>Down Time in Production Phase (Hr)</Description>
+<Value>5:24:33</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List29" msdata:rowOrder="28" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>DFP</KPI>
+<Description>Down Frequency in Production Phase (#)</Description>
+<Value>16.000000</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List30" msdata:rowOrder="29" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>LU</KPI>
+<Description>Line Utilisation (%)</Description>
+<Value>57.99%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List31" msdata:rowOrder="30" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>LE</KPI>
+<Description>Line Efficiency (%)</Description>
+<Value>88.69%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List32" msdata:rowOrder="31" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>ME</KPI>
+<Description>Machine Efficiency (%)</Description>
+<Value>93.65%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List33" msdata:rowOrder="32" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>LPU</KPI>
+<Description>Line Production Utilisation (%)</Description>
+<Value>70.44%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List34" msdata:rowOrder="33" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PTU</KPI>
+<Description>Production Time Utilisation (%)</Description>
+<Value>70.72%</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List35" msdata:rowOrder="34" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>MTBFA</KPI>
+<Description>MTBF All Stops during Production (Hr)</Description>
+<Value>0:49:00</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List36" msdata:rowOrder="35" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>MTTRA</KPI>
+<Description>MTTR All Stops during Production (Hr)</Description>
+<Value>0:20:16</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List37" msdata:rowOrder="36" diffgr:hasChanges="inserted">
+<Date>12/1/2022</Date>
+<KPI>PPMDBypass</KPI>
+<Description>PPMDBypass</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-01</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List38" msdata:rowOrder="37" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>TotalTime</KPI>
+<Description>TotalTime</Description>
+<Value>86400</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List39" msdata:rowOrder="38" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>AttendanceTime</KPI>
+<Description>AttendanceTime</Description>
+<Value>69890</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List40" msdata:rowOrder="39" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>IdleStopTime</KPI>
+<Description>IdleStopTime</Description>
+<Value>4916</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List41" msdata:rowOrder="40" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PlannedStopTime</KPI>
+<Description>PlannedStopTime</Description>
+<Value>17940</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List42" msdata:rowOrder="41" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>StopTimeNoMS</KPI>
+<Description>StopTimeNoMS</Description>
+<Value>4383</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List43" msdata:rowOrder="42" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>StopFrequency</KPI>
+<Description>Stop Frequency</Description>
+<Value>6.000000</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List44" msdata:rowOrder="43" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>StopFrequencyNoMS</KPI>
+<Description>StopFrequencyNoMS</Description>
+<Value>5.000000</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List45" msdata:rowOrder="44" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>OtherStopFrequency</KPI>
+<Description>OtherStopFrequency</Description>
+<Value>6.000000</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List46" msdata:rowOrder="45" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>OutsideProductionFrequency</KPI>
+<Description>OutsideProductionFrequency</Description>
+<Value>11</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List47" msdata:rowOrder="46" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>ProductionTime</KPI>
+<Description>Production Time (Hr)</Description>
+<Value>12:08:55</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List48" msdata:rowOrder="47" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>StopTime</KPI>
+<Description>Equipment Stop (Hr)</Description>
+<Value>1:13:23</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List49" msdata:rowOrder="48" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>OtherStopTime</KPI>
+<Description>Other Stop (Hr)</Description>
+<Value>1:54:08</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List50" msdata:rowOrder="49" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>OutsideProductionTime</KPI>
+<Description>Outside Production (Hr)</Description>
+<Value>4:08:24</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List51" msdata:rowOrder="50" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>TCU</KPI>
+<Description>Total Capacity Utilisation (%)</Description>
+<Value>50.62%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List52" msdata:rowOrder="51" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>TU</KPI>
+<Description>Time Utilisation (%)</Description>
+<Value>62.58%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List53" msdata:rowOrder="52" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PMU</KPI>
+<Description>Packaging Material Utilisation (%)</Description>
+<Value>99.32%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List54" msdata:rowOrder="53" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>MME</KPI>
+<Description>Machine Mechanical Efficiency (%)</Description>
+<Value>90.85%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List55" msdata:rowOrder="54" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>MTBF</KPI>
+<Description>Mean Time Between Failure (Hr)</Description>
+<Value>2:25:47</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List56" msdata:rowOrder="55" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>MTTR</KPI>
+<Description>Mean Time To Restoration (Hr)</Description>
+<Value>0:14:37</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List57" msdata:rowOrder="56" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PME</KPI>
+<Description>Packaging Material Efficiency (%)</Description>
+<Value>99.75%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List58" msdata:rowOrder="57" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PackagesOut</KPI>
+<Description>Packages Produced</Description>
+<Value>109008</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List59" msdata:rowOrder="58" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>TotalWaste</KPI>
+<Description>Total Waste</Description>
+<Value>745</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List60" msdata:rowOrder="59" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PercTotalWaste</KPI>
+<Description>Waste, % of Packages In</Description>
+<Value>0.68%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List61" msdata:rowOrder="60" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>StopWaste</KPI>
+<Description>Equipment Waste</Description>
+<Value>273</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List62" msdata:rowOrder="61" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>OtherStopWaste</KPI>
+<Description>Other Production Waste</Description>
+<Value>343</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List63" msdata:rowOrder="62" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>OutsideProductionWaste</KPI>
+<Description>Outside Production Waste</Description>
+<Value>87</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List64" msdata:rowOrder="63" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PercDocWaste</KPI>
+<Description>Documented Waste, % of Packages In</Description>
+<Value>0.64%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List65" msdata:rowOrder="64" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>DTP</KPI>
+<Description>Down Time in Production Phase (Hr)</Description>
+<Value>3:07:31</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List66" msdata:rowOrder="65" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>DFP</KPI>
+<Description>Down Frequency in Production Phase (#)</Description>
+<Value>11.000000</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List67" msdata:rowOrder="66" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>LU</KPI>
+<Description>Line Utilisation (%)</Description>
+<Value>62.39%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List68" msdata:rowOrder="67" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>LE</KPI>
+<Description>Line Efficiency (%)</Description>
+<Value>90.58%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List69" msdata:rowOrder="68" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>ME</KPI>
+<Description>Machine Efficiency (%)</Description>
+<Value>98.26%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List70" msdata:rowOrder="69" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>LPU</KPI>
+<Description>Line Production Utilisation (%)</Description>
+<Value>79.30%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List71" msdata:rowOrder="70" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PTU</KPI>
+<Description>Production Time Utilisation (%)</Description>
+<Value>79.54%</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List72" msdata:rowOrder="71" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>MTBFA</KPI>
+<Description>MTBF All Stops during Production (Hr)</Description>
+<Value>1:06:16</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List73" msdata:rowOrder="72" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>MTTRA</KPI>
+<Description>MTTR All Stops during Production (Hr)</Description>
+<Value>0:17:01</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List74" msdata:rowOrder="73" diffgr:hasChanges="inserted">
+<Date>12/2/2022</Date>
+<KPI>PPMDBypass</KPI>
+<Description>PPMDBypass</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-02</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List75" msdata:rowOrder="74" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>TotalTime</KPI>
+<Description>TotalTime</Description>
+<Value>86400</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List76" msdata:rowOrder="75" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>AttendanceTime</KPI>
+<Description>AttendanceTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List77" msdata:rowOrder="76" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>IdleStopTime</KPI>
+<Description>IdleStopTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List78" msdata:rowOrder="77" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PlannedStopTime</KPI>
+<Description>PlannedStopTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List79" msdata:rowOrder="78" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>StopTimeNoMS</KPI>
+<Description>StopTimeNoMS</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List80" msdata:rowOrder="79" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>StopFrequency</KPI>
+<Description>Stop Frequency</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List81" msdata:rowOrder="80" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>StopFrequencyNoMS</KPI>
+<Description>StopFrequencyNoMS</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List82" msdata:rowOrder="81" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>OtherStopFrequency</KPI>
+<Description>OtherStopFrequency</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List83" msdata:rowOrder="82" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>OutsideProductionFrequency</KPI>
+<Description>OutsideProductionFrequency</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List84" msdata:rowOrder="83" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>ProductionTime</KPI>
+<Description>Production Time (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List85" msdata:rowOrder="84" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>StopTime</KPI>
+<Description>Equipment Stop (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List86" msdata:rowOrder="85" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>OtherStopTime</KPI>
+<Description>Other Stop (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List87" msdata:rowOrder="86" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>OutsideProductionTime</KPI>
+<Description>Outside Production (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List88" msdata:rowOrder="87" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>TCU</KPI>
+<Description>Total Capacity Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List89" msdata:rowOrder="88" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>TU</KPI>
+<Description>Time Utilisation (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List90" msdata:rowOrder="89" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PMU</KPI>
+<Description>Packaging Material Utilisation (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List91" msdata:rowOrder="90" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>MME</KPI>
+<Description>Machine Mechanical Efficiency (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List92" msdata:rowOrder="91" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>MTBF</KPI>
+<Description>Mean Time Between Failure (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List93" msdata:rowOrder="92" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>MTTR</KPI>
+<Description>Mean Time To Restoration (Hr)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List94" msdata:rowOrder="93" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PME</KPI>
+<Description>Packaging Material Efficiency (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List95" msdata:rowOrder="94" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PackagesOut</KPI>
+<Description>Packages Produced</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List96" msdata:rowOrder="95" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>TotalWaste</KPI>
+<Description>Total Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List97" msdata:rowOrder="96" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PercTotalWaste</KPI>
+<Description>Waste, % of Packages In</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List98" msdata:rowOrder="97" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>StopWaste</KPI>
+<Description>Equipment Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List99" msdata:rowOrder="98" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>OtherStopWaste</KPI>
+<Description>Other Production Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List100" msdata:rowOrder="99" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>OutsideProductionWaste</KPI>
+<Description>Outside Production Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List101" msdata:rowOrder="100" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PercDocWaste</KPI>
+<Description>Documented Waste, % of Packages In</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List102" msdata:rowOrder="101" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>DTP</KPI>
+<Description>Down Time in Production Phase (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List103" msdata:rowOrder="102" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>DFP</KPI>
+<Description>Down Frequency in Production Phase (#)</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List104" msdata:rowOrder="103" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>LU</KPI>
+<Description>Line Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List105" msdata:rowOrder="104" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>LE</KPI>
+<Description>Line Efficiency (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List106" msdata:rowOrder="105" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>ME</KPI>
+<Description>Machine Efficiency (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List107" msdata:rowOrder="106" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>LPU</KPI>
+<Description>Line Production Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List108" msdata:rowOrder="107" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PTU</KPI>
+<Description>Production Time Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List109" msdata:rowOrder="108" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>MTBFA</KPI>
+<Description>MTBF All Stops during Production (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List110" msdata:rowOrder="109" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>MTTRA</KPI>
+<Description>MTTR All Stops during Production (Hr)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List111" msdata:rowOrder="110" diffgr:hasChanges="inserted">
+<Date>12/3/2022</Date>
+<KPI>PPMDBypass</KPI>
+<Description>PPMDBypass</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-03</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List112" msdata:rowOrder="111" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>TotalTime</KPI>
+<Description>TotalTime</Description>
+<Value>86400</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List113" msdata:rowOrder="112" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>AttendanceTime</KPI>
+<Description>AttendanceTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List114" msdata:rowOrder="113" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>IdleStopTime</KPI>
+<Description>IdleStopTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List115" msdata:rowOrder="114" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PlannedStopTime</KPI>
+<Description>PlannedStopTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List116" msdata:rowOrder="115" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>StopTimeNoMS</KPI>
+<Description>StopTimeNoMS</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List117" msdata:rowOrder="116" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>StopFrequency</KPI>
+<Description>Stop Frequency</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List118" msdata:rowOrder="117" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>StopFrequencyNoMS</KPI>
+<Description>StopFrequencyNoMS</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List119" msdata:rowOrder="118" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>OtherStopFrequency</KPI>
+<Description>OtherStopFrequency</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List120" msdata:rowOrder="119" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>OutsideProductionFrequency</KPI>
+<Description>OutsideProductionFrequency</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List121" msdata:rowOrder="120" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>ProductionTime</KPI>
+<Description>Production Time (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List122" msdata:rowOrder="121" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>StopTime</KPI>
+<Description>Equipment Stop (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List123" msdata:rowOrder="122" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>OtherStopTime</KPI>
+<Description>Other Stop (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List124" msdata:rowOrder="123" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>OutsideProductionTime</KPI>
+<Description>Outside Production (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List125" msdata:rowOrder="124" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>TCU</KPI>
+<Description>Total Capacity Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List126" msdata:rowOrder="125" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>TU</KPI>
+<Description>Time Utilisation (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List127" msdata:rowOrder="126" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PMU</KPI>
+<Description>Packaging Material Utilisation (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List128" msdata:rowOrder="127" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>MME</KPI>
+<Description>Machine Mechanical Efficiency (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List129" msdata:rowOrder="128" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>MTBF</KPI>
+<Description>Mean Time Between Failure (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List130" msdata:rowOrder="129" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>MTTR</KPI>
+<Description>Mean Time To Restoration (Hr)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List131" msdata:rowOrder="130" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PME</KPI>
+<Description>Packaging Material Efficiency (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List132" msdata:rowOrder="131" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PackagesOut</KPI>
+<Description>Packages Produced</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List133" msdata:rowOrder="132" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>TotalWaste</KPI>
+<Description>Total Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List134" msdata:rowOrder="133" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PercTotalWaste</KPI>
+<Description>Waste, % of Packages In</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List135" msdata:rowOrder="134" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>StopWaste</KPI>
+<Description>Equipment Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List136" msdata:rowOrder="135" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>OtherStopWaste</KPI>
+<Description>Other Production Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List137" msdata:rowOrder="136" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>OutsideProductionWaste</KPI>
+<Description>Outside Production Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List138" msdata:rowOrder="137" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PercDocWaste</KPI>
+<Description>Documented Waste, % of Packages In</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List139" msdata:rowOrder="138" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>DTP</KPI>
+<Description>Down Time in Production Phase (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List140" msdata:rowOrder="139" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>DFP</KPI>
+<Description>Down Frequency in Production Phase (#)</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List141" msdata:rowOrder="140" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>LU</KPI>
+<Description>Line Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List142" msdata:rowOrder="141" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>LE</KPI>
+<Description>Line Efficiency (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List143" msdata:rowOrder="142" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>ME</KPI>
+<Description>Machine Efficiency (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List144" msdata:rowOrder="143" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>LPU</KPI>
+<Description>Line Production Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List145" msdata:rowOrder="144" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PTU</KPI>
+<Description>Production Time Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List146" msdata:rowOrder="145" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>MTBFA</KPI>
+<Description>MTBF All Stops during Production (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List147" msdata:rowOrder="146" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>MTTRA</KPI>
+<Description>MTTR All Stops during Production (Hr)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List148" msdata:rowOrder="147" diffgr:hasChanges="inserted">
+<Date>12/4/2022</Date>
+<KPI>PPMDBypass</KPI>
+<Description>PPMDBypass</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-04</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List149" msdata:rowOrder="148" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>TotalTime</KPI>
+<Description>TotalTime</Description>
+<Value>86400</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List150" msdata:rowOrder="149" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>AttendanceTime</KPI>
+<Description>AttendanceTime</Description>
+<Value>8702</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List151" msdata:rowOrder="150" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>IdleStopTime</KPI>
+<Description>IdleStopTime</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List152" msdata:rowOrder="151" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PlannedStopTime</KPI>
+<Description>PlannedStopTime</Description>
+<Value>8431</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List153" msdata:rowOrder="152" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>StopTimeNoMS</KPI>
+<Description>StopTimeNoMS</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List154" msdata:rowOrder="153" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>StopFrequency</KPI>
+<Description>Stop Frequency</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List155" msdata:rowOrder="154" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>StopFrequencyNoMS</KPI>
+<Description>StopFrequencyNoMS</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List156" msdata:rowOrder="155" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>OtherStopFrequency</KPI>
+<Description>OtherStopFrequency</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List157" msdata:rowOrder="156" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>OutsideProductionFrequency</KPI>
+<Description>OutsideProductionFrequency</Description>
+<Value>2</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List158" msdata:rowOrder="157" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>ProductionTime</KPI>
+<Description>Production Time (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List159" msdata:rowOrder="158" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>StopTime</KPI>
+<Description>Equipment Stop (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List160" msdata:rowOrder="159" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>OtherStopTime</KPI>
+<Description>Other Stop (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List161" msdata:rowOrder="160" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>OutsideProductionTime</KPI>
+<Description>Outside Production (Hr)</Description>
+<Value>2:25:02</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List162" msdata:rowOrder="161" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>TCU</KPI>
+<Description>Total Capacity Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List163" msdata:rowOrder="162" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>TU</KPI>
+<Description>Time Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List164" msdata:rowOrder="163" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PMU</KPI>
+<Description>Packaging Material Utilisation (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List165" msdata:rowOrder="164" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>MME</KPI>
+<Description>Machine Mechanical Efficiency (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List166" msdata:rowOrder="165" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>MTBF</KPI>
+<Description>Mean Time Between Failure (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List167" msdata:rowOrder="166" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>MTTR</KPI>
+<Description>Mean Time To Restoration (Hr)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List168" msdata:rowOrder="167" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PME</KPI>
+<Description>Packaging Material Efficiency (%)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List169" msdata:rowOrder="168" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PackagesOut</KPI>
+<Description>Packages Produced</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List170" msdata:rowOrder="169" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>TotalWaste</KPI>
+<Description>Total Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List171" msdata:rowOrder="170" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PercTotalWaste</KPI>
+<Description>Waste, % of Packages In</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List172" msdata:rowOrder="171" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>StopWaste</KPI>
+<Description>Equipment Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List173" msdata:rowOrder="172" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>OtherStopWaste</KPI>
+<Description>Other Production Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List174" msdata:rowOrder="173" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>OutsideProductionWaste</KPI>
+<Description>Outside Production Waste</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List175" msdata:rowOrder="174" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PercDocWaste</KPI>
+<Description>Documented Waste, % of Packages In</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List176" msdata:rowOrder="175" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>DTP</KPI>
+<Description>Down Time in Production Phase (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List177" msdata:rowOrder="176" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>DFP</KPI>
+<Description>Down Frequency in Production Phase (#)</Description>
+<Value>0.000000</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List178" msdata:rowOrder="177" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>LU</KPI>
+<Description>Line Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List179" msdata:rowOrder="178" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>LE</KPI>
+<Description>Line Efficiency (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List180" msdata:rowOrder="179" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>ME</KPI>
+<Description>Machine Efficiency (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List181" msdata:rowOrder="180" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>LPU</KPI>
+<Description>Line Production Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List182" msdata:rowOrder="181" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PTU</KPI>
+<Description>Production Time Utilisation (%)</Description>
+<Value>0.00%</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List183" msdata:rowOrder="182" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>MTBFA</KPI>
+<Description>MTBF All Stops during Production (Hr)</Description>
+<Value>0:00:00</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List184" msdata:rowOrder="183" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>MTTRA</KPI>
+<Description>MTTR All Stops during Production (Hr)</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+<Kpi_List diffgr:id="Kpi_List185" msdata:rowOrder="184" diffgr:hasChanges="inserted">
+<Date>12/5/2022</Date>
+<KPI>PPMDBypass</KPI>
+<Description>PPMDBypass</Description>
+<Value>0</Value>
+<DateInvariant>2022-12-05</DateInvariant>
+</Kpi_List>
+</DocumentElement>
+</diffgr:diffgram>
+</DataTable>
